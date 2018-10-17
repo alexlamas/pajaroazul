@@ -1,0 +1,42 @@
+// base.sass
+$dark-colour: #191919
+$light-colour: white
+@import fonts
+@import mixins
+@import navigation
+@import piezas
+@import papel
+
+body
+  @include animate(fadein 1s)
+  background-color: $light-colour
+  padding: 60px 40px 0 40px
+  margin: 0
+  font-size: 16px
+
+.home
+  background-color: $dark-colour
+
+.top-bar
+  top: 40px
+  display: flex
+  width: calc(100% - 80px)
+  justify-content: space-between
+  z-index: 100
+  position: absolute
+
+.video-container
+  position: absolute
+  width: calc(100% - 80px)
+  height: calc(100% - 160px)
+  z-index: -100
+  top:52px
+  overflow: hidden
+  @include box-size(border-box)
+  video
+    position: absolute
+    min-width: 100%
+    min-height: 100%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

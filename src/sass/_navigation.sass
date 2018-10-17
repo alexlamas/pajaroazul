@@ -1,0 +1,38 @@
+.nav
+  display: flex
+  a
+    cursor: pointer
+    color: #3C3C3C
+    padding: 0 2em
+    font-family: 'Space Mono', monospace
+    z-index: 100
+    opacity: 0.8
+    text-decoration: none
+    transition: all 0.1s
+  a:hover
+    opacity: 1
+    text-decoration: underline
+  a:last-child
+    padding-right: 0
+
+.nav.home
+  bottom: 60px
+  position: absolute
+  button
+    color: white
+    background: none
+    border: none
+    cursor: pointer
+    font-size: 16px
+    font-family: 'Space Mono', monospace
+    outline: none
+    opacity: 0.8
+    transition: all 0.1s
+    padding: 0
+  button:hover
+    opacity: 1
+    text-decoration: underline
+  a
+    color: white
+  a:first-child
+    padding-left: 0
