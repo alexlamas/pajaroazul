@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Pajaro Azul</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 
 <body class="home">
   <div class="top-bar">
@@ -19,20 +21,26 @@
     <!-- <a href="piezas.html">piezas</a>
     <a>ediciónes</a>
     <a>contacto</a> -->
-    <button onclick="enableMute()" type="button">Sonido</button>
+    <button id="mute-button" onclick="enableMute()" type="button">Sonido: off</button>
   </div>
   <script>
-var vid = document.getElementById("hero-video");
-function enableMute() {
-
-if (vid.muted) {
-  vid.muted = false;
-}
-else {
-  vid.muted = true;
-}
-}
-</script>
+    var vid = document.getElementById("hero-video");
+    var button = document.getElementById("mute-button");
+    function enableMute() {
+      if (vid.muted) {
+        vid.muted = false;
+        button.innerHTML = 'Sonido: on';
+      } else {
+        vid.muted = true;
+        button.innerHTML = 'Sonido: off';
+      }
+    }
+  </script>
 </body>
 
 </html>
+<script>
+  $(document).ready(function() {
+    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+  });
+</script>
