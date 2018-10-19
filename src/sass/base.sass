@@ -1,5 +1,5 @@
 // base.sass
-$dark-colour: #191919
+$dark-colour: #495454
 $light-colour: white
 @import fonts
 @import mixins
@@ -13,6 +13,8 @@ body
   padding: 60px 40px 0 40px
   margin: 0
   font-size: 16px
+  @media only screen and (max-width: 600px)
+    padding: 0
 
 .home
   background-color: $dark-colour
@@ -24,17 +26,22 @@ body
   justify-content: space-between
   z-index: 100
   position: absolute
+  @media only screen and (max-width: 600px)
+    padding-left: 20px
+    top: 24px
 
 .video-container
   position: absolute
   width: calc(100% - 80px)
   height: calc(100% - 160px)
-  @media only screen and (max-width: 600px)
-    height: calc(100% - 104px)
   z-index: -100
   top:52px
   overflow: hidden
   @include box-size(border-box)
+  @media only screen and (max-width: 600px)
+    width: 100%
+    top: 42px
+    height: calc(100% - 100px)
   video
     position: absolute
     min-width: 100%
