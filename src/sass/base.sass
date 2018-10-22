@@ -1,21 +1,31 @@
 // base.sass
 $dark-colour: #495454
+$dark-colour: black
 $light-colour: white
 @import fonts
 @import mixins
 @import navigation
 @import piezas
-@import papel
 
 body
   @include animate(fadein 1s)
   background-color: $light-colour
+  color: white
   padding: 60px 40px 0 40px
   margin: 0
   font-size: 16px
   @media only screen and (max-width: 600px)
     padding: 0
-
+a
+  color: white
+  text-decoration: none
+  font-family: 'Work Sans'
+  opacity: 0.8
+  transition: 0.2s
+a:hover
+  opacity: 1
+.logo a
+  opacity: 1
 .home
   background-color: $dark-colour
 
@@ -49,3 +59,21 @@ body
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+.content
+  margin-top: calc(100vh - 60px)
+  display: flex
+  flex-direction: column
+  @media only screen and (max-width: 600px)
+    margin: 20px
+    margin-top: 100vh
+  a
+    font-family: 'Alice', serif
+    font-size: 50px
+    margin: 38px 0
+
+footer
+  display: flex
+  justify-content: center
+  margin: 40px 0
+  a
+    margin: 40px 30px 0 30px

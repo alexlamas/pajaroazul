@@ -1,13 +1,42 @@
-h1 
-  font-family: LibreBaskerville-Regular
-  font-size: 2em
-  color: $dark-colour
-  text-align: left
-  font-weight: 100
-  margin: 0
-  margin-top: 60px
-.content 
-  .item 
+h1
+  font-family: 'Alice', serif
+  font-size: 50px
+  color: black
+  font-weight: 200
+  margin-top: 20px
+  margin-bottom: 30px
+.papel
+  background-color: white
+  max-width: 600px
+  margin: auto
+  margin-top: 20px
+  padding: 50px 0px
+  @media only screen and (max-width: 600px)
+    padding: 60px 20px
+  #back
+    margin-bottom: 50px
+    color: black
+    opacity: 1
+    transition: 0.2s
+    &:hover
+      opacity: 0.7
+  p
+    font-family: 'Work Sans'
+    color: black
+    font-size: 20px
+  .full
+    margin: 20px 0
+    max-width: 700px
+.content-background
+  width: 100%
+  height: 100%
+  z-index:-100
+  position: absolute
+  left: 0
+  top: 160px
+  background-image: url(../media/test.png)
+.content
+  .item
     cursor: pointer
     margin-bottom: 60px
     transition: all 0.4s
@@ -17,9 +46,8 @@ h1
     &:hover
       text-decoration: underline
 
-.properties 
-  margin-left: 2px
+.properties
   opacity: 0.5
-  font-family: SpaceMono-Regular
-  color: $dark-colour
+  font-family: Work Sans
+  color: black
   text-align: left

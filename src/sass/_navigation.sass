@@ -4,7 +4,7 @@
     cursor: pointer
     color: #3C3C3C
     padding: 0 2em
-    font-family: 'Space Mono', monospace
+    font-family: 'Work Sans'
     z-index: 100
     opacity: 0.8
     text-decoration: none
@@ -18,13 +18,16 @@
 .nav.home
   bottom: 60px
   position: absolute
+  width: calc(100% - 80px)
+  @media only screen and (max-width: 600px)
+    width: calc(100% - 40px)
   button
     color: white
     background: none
     border: none
     cursor: pointer
     font-size: 16px
-    font-family: 'Space Mono', monospace
+    font-family: 'Work Sans'
     outline: none
     opacity: 0.8
     padding: 0
@@ -32,11 +35,14 @@
     transition: all 0.1s
   button:hover
     opacity: 1
-    text-decoration: underline
     @media only screen and (max-width: 600px)
       text-decoration: none
   a
     color: white
+    position: absolute
+    right: 0
+    transform: translateX(-50%)
+    padding-left: 0
   a:first-child
     padding-left: 0
   @media only screen and (max-width: 600px)

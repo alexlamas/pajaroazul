@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <title>Pajaro Azul</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="home">
   <div class="top-bar">
-    <div class="logo"> <a href="index.html"><img src="media/white-logo.svg"/></a></div>
+    <div class="logo"> <a href="index.html"><img src="media/white-logo.svg" /></a></div>
   </div>
   <div class="video-container">
     <video id="hero-video" autoplay playsinline muted loop="true">
@@ -21,18 +22,35 @@
     <!-- <a href="piezas.html">piezas</a>
     <a>ediciónes</a>
     <a>contacto</a> -->
-    <button id="mute-button" onclick="enableMute()" type="button">Sonido: off</button>
+    <button id="mute-button" onclick="enableMute()" type="button">Sonido: OFF</button>
+    <a href="#content"><i class="fas fa-chevron-down"></i></a>
   </div>
+  <div class="content" id="content">
+    <a href="content/test-content.html">Por Qué<br>
+      <div class="properties" style="color:white; font-size:16px; padding-top: 3px;">Palabra - 20.10.18 - Pájaro Azul</div>
+    </a>
+    <a href="content/test-content.html">El Cuerpo del Humo<br>
+      <div class="properties" style="color:white; font-size:16px; padding-top: 3px;">Imagen - 20.10.18 - Olga Gutierrez</div>
+    </a>
+    <a href="content/test-content.html">Otra Mirada<br>
+      <div class="properties" style="color:white; font-size:16px; padding-top: 3px;">Palabra - 20.10.18 - Tzano Malo</div>
+    </a>
+  </div>
+  <footer>
+    <a href="mailto:asistenciaaldesorientado@gmail.com"><i class="far fa-envelope"></i> Email</a>
+    <a href="https://www.instagram.com/revistapajaroazul/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </footer>
   <script>
     var vid = document.getElementById("hero-video");
     var button = document.getElementById("mute-button");
+
     function enableMute() {
       if (vid.muted) {
         vid.muted = false;
-        button.innerHTML = 'Sonido: on';
+        button.innerHTML = 'Sonido: ON';
       } else {
         vid.muted = true;
-        button.innerHTML = 'Sonido: off';
+        button.innerHTML = 'Sonido: OFF';
       }
     }
   </script>
