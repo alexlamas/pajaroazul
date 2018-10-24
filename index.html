@@ -3,12 +3,12 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alice|Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <title>Pajaro Azul</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/mute-button.js"></script>
+  <title>Pajaro Azul</title>
 </head>
 
 <body class="home">
@@ -20,9 +20,6 @@
       <source src="media/hero-video.mp4" type="video/mp4"> </video>
   </div>
   <div class="nav home">
-    <!-- <a href="piezas.html">piezas</a>
-    <a>ediciónes</a>
-    <a>contacto</a> -->
     <button id="mute-button" onclick="enableMute()" type="button">Sonido: OFF</button>
     <a href="#content"><i class="fas fa-chevron-down"></i></a>
   </div>
@@ -41,8 +38,4 @@
 </body>
 
 </html>
-<script>
-  $(document).ready(function() {
-    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
-  });
-</script>
+<script src="js/remove-logo.js"></script>
