@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <title>Pajaro Azul</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/mute-button.js"></script>
 </head>
 
 <body class="home">
@@ -37,20 +38,6 @@
     <a href="mailto:asistenciaaldesorientado@gmail.com"><i class="far fa-envelope"></i> Email</a>
     <a href="https://www.instagram.com/revistapajaroazul/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
   </footer>
-  <script>
-    var vid = document.getElementById("hero-video");
-    var button = document.getElementById("mute-button");
-
-    function enableMute() {
-      if (vid.muted) {
-        vid.muted = false;
-        button.innerHTML = 'Sonido: ON';
-      } else {
-        vid.muted = true;
-        button.innerHTML = 'Sonido: OFF';
-      }
-    }
-  </script>
 </body>
 
 </html>
