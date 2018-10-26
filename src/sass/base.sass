@@ -33,15 +33,31 @@ a:hover
   background-color: $dark-colour
 
 .top-bar
-  top: 34px
+  position: fixed
+  padding: 10px 0px
+  top: 24px
   display: flex
   width: calc(100% - 80px)
   justify-content: space-between
   z-index: 100
   position: absolute
+  background-color: transparent
+  transition: all 0.1s linear
   @media only screen and (max-width: 600px)
     padding-left: 20px
-    top: 24px
+    top: 14px
+.top-bar-alt
+  top: 0
+  display: flex
+  width: 100%
+  justify-content: space-between
+  z-index: 100
+  position: fixed
+  padding: 20px 0px
+  background-color: black
+  transition: all 0.1s linear
+  @media only screen and (max-width: 600px)
+    padding: 20px
 
 .video-container
   position: absolute
